@@ -14,7 +14,9 @@ import 'package:flutter/material.dart';
               appBar: AppBar(
                 backgroundColor: const Color(0xFFFDF4E8),
               ),// 상단
-            body: Center(
+            body:   Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -76,9 +78,64 @@ import 'package:flutter/material.dart';
                       ),
                     ),
                   ),
+                  SizedBox(height: 20),
+                  Container(
+                    width: 330,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF7daed3),
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(
+                        width: 2,
+                        color: Color(0xFFF0EDEB),
+                      ),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text('로그인',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    children: [
+                      Expanded(flex: 1, child: Divider(),),
+                      SizedBox(width: 10),
+                      Text('또는',
+                        style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                      ),),
+                      SizedBox(width: 10),
+                      Expanded(flex: 1, child: Divider(),),
+                    ],
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    width: 330,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(
+                        width: 2,
+                        color: Color(0xFFF0EDEB),
+                      ),
+                    ),
+                    child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Center(
+                            child: Text('회원가입', ),
+                        ),
+                      ),
+                    ),
                 ],
               ),
-            ), // 중단
+            ),),// 중단
             bottomNavigationBar: Row(), // 하단
           )
       );
