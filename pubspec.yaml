@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dotted_border: ^2.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -59,6 +60,12 @@ flutter:
   uses-material-design: true
   assets:
     - assets/familyDailyLogo.png
+    - assets/familyDailyLogo02.png
+    - assets/test_image.jpg
+    - assets/test_mom.png
+    - assets/test_dad.png
+    - assets/mom_daily.jpg
+    - assets/emotionImages/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
